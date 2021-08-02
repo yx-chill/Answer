@@ -1,0 +1,10 @@
+.pagination {
+    .page-link {
+        border: 1px solid $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: #FFF !important;
+        }
+    }
+}

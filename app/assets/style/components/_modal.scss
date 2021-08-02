@@ -1,0 +1,80 @@
+.info {
+    line-height: 1.2;
+
+    .modal-content {
+        padding: 32px;
+
+        img {
+            width: 145px;
+            height: 145px;
+        }
+    }
+
+    .modal-info {
+        width: 60%;
+
+        .modal-email {
+            font-size: 14px;
+            color: $gray-600;
+        }
+    }
+}
+
+.add,
+.edit {
+    .modal-header {
+        padding: 32px;
+    }
+
+    .modal-body {
+        padding: 0 32px;
+
+        .account {
+            border-bottom: 1px solid $gray-400;
+        }
+
+        .verification {
+            border-bottom: 1px solid $gray-400;
+
+            .mail-btn {
+                border: 1px solid $gray-400;
+            }
+        }
+
+        .access-level {
+            border-bottom: 1px solid $gray-400;
+
+            .choose {
+                color: $gray-600;
+                border: 1px solid $gray-900;
+            }
+        }
+
+    }
+
+    .modal-footer {
+        padding: 16px 32px;
+
+        button {
+            padding: 8px 32px;
+        }
+    }
+}
+
+.edit {
+    .account input {
+        background-color: $gray-100;
+    }
+
+    .verification {
+        time {
+            font-size: 14px;
+        }
+        .mail-btn {
+            color: $gray-400;
+        }
+    }
+    .custom {
+        border-bottom: 1px solid $gray-400;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- https://codepen.io/hsuan333/pen/VwbxqbX -->
+</head>
+
+<body>
+  <div class="wrap d-flex">
+    <div class="sidebar d-flex flex-column">
+      <h1 class="answer"><a href="index.html">ANSWER</a></h1>
+      <div class="sidebar-body d-flex flex-column justify-content-between">
+        <ul class="menu">
+          <li class="sidebar-option fw-bold mb-4"><a class="text-decoration-none d-flex align-items-center" href="#"><i
+                class="material-icons me-3">insert_chart</i>Question</a></li>
+          <li class="sidebar-option fw-bold mb-4"><a class="text-decoration-none d-flex align-items-center" href="#"><i
+                class="material-icons me-3">question_answer</i>Dashboard</a></li>
+          <li class="sidebar-option fw-bold mb-4"><a class="text-decoration-none d-flex align-items-center" href="index.html"><i
+                class="material-icons me-3">assignment</i>Assignment</a></li>
+          <li class="sidebar-option fw-bold mb-4"><a class="text-decoration-none d-flex align-items-center" href="#"><i
+                class="material-icons me-3">video_library</i>Course</a></li>
+          <li class="sidebar-option fw-bold mb-4"><a class="text-decoration-none d-flex align-items-center"
+              href="admin.html"><i class="material-icons me-3">people</i>Admin</a></li>
+          <li class="sidebar-option fw-bold mb-4"><a class="text-decoration-none d-flex align-items-center" href="#"><i
+                class="material-icons me-3">settings</i>Settings</a></li>
+        </ul>
+        <div class="admin d-flex align-items-center">
+          <img class="me-3"
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+            alt="admin photo">
+          <div class="admin-info">
+            <h2 class="admin-name mb-1 fw-bold">Andy Chen</h2>
+            <p class="email">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <%- contents %>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+  </script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

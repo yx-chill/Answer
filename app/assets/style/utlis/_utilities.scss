@@ -1,0 +1,12 @@
+.container {
+    padding: 0 32px;
+    padding-bottom: 32px;
+}
+
+.option-focus {
+    border-left: 4px solid $primary !important;
+
+    a {
+        color: $primary;
+    }
+}

@@ -1,0 +1,49 @@
+.sidebar {
+    background-color: $gray-100;
+    width: 23.125%;
+    padding: 32px;
+}
+
+.answer {
+    margin-bottom: 32px;
+
+    a {
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg') no-repeat center;
+        width: 150px;
+        height: 40px;
+        display: block;
+        @include hide-text;
+    }
+}
+
+.sidebar-body {
+    flex-grow: 1;
+}
+
+.menu {
+    margin-left: -32px;
+
+    li {
+        padding-left: 32px;
+        border-left: 4px solid transparent;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary;
+            border-left: 4px solid $primary;
+        }
+    }
+}
+
+.admin {
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 24px;
+    }
+
+    .email {
+        font-size: 14px;
+        color: $gray-600;
+    }
+}

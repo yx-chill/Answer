@@ -1,0 +1,180 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container">
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="text d-flex align-items-center">
+            <h2 class="title fw-bold me-5">Assignment</h2>
+            <div class="dropdown">
+                <a class="btn dropdown-toggle fw-bold border-0" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="material-icons me-4">search</i></a>
+            <a href="#"><i class="material-icons">notifications_active</i></a>
+        </div>
+    </header>
+    <div class="d-flex justify-content-between">
+        <div class=" all dropdown">
+            <button class="btn dropdown-toggle fw-bold border-0 px-0 py-1" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                All (4)
+            </button>
+            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
+                <li class="rounded-top"><a class="dropdown-item p-0 d-flex justify-content-between" href="#">
+                        <div>
+                            <p class="chapter mb-1">Chapter Assignment 2</p>
+                            <h3 class="subject fw-bold">Please check this file…</h3>
+                        </div>
+                        <div>
+                            <time class="d-block text-end mb-2">4 hrs ago</time>
+                            <p class="sender">Emily Wang</p>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item p-0 d-flex justify-content-between" href="#">
+                        <div>
+                            <p class="chapter mb-1">Chapter Assignment 1</p>
+                            <h3 class="subject fw-bold">My Homework</h3>
+                        </div>
+                        <div>
+                            <time class="d-block text-end mb-2">12 hrs ago</time>
+                            <p class="sender">David Xu</p>
+                        </div>
+                    </a></li>
+                <li><a class="dropdown-item p-0 d-flex justify-content-between" href="#">
+                        <div>
+                            <p class="chapter mb-1">Final Assignment</p>
+                            <h3 class="subject fw-bold">Have a problem with this…</h3>
+                        </div>
+                        <div>
+                            <time class="d-block text-end mb-2">18 hrs ago</time>
+                            <p class="sender">Tony Wei</p>
+                        </div>
+                    </a></li>
+                <li class="rounded-end"><a class="dropdown-item p-0 d-flex justify-content-between" href="#">
+                        <div>
+                            <p class="chapter mb-1">Final Assignment</p>
+                            <h3 class="subject fw-bold">Did I do it right?</h3>
+                        </div>
+                        <div>
+                            <time class="d-block text-end mb-2">19 hrs ago</time>
+                            <p class="sender">Christina Lin</p>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="comments">
+            <p class="comment-number text-end py-2">2 comments</p>
+            <div class="commentbox mb-3">
+                <div class="comment-title d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="chapter mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                        <h3 class="subject fw-bold">Please check this file for me, thanks!</h3>
+                    </div>
+                    <i class="material-icons">more_vert</i>
+                </div>
+                <ul class="comment">
+                    <li class="d-flex p-3">
+                        <img class="me-2"
+                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
+                            alt="photo">
+                        <div class="content-text border-bottom">
+                            <div class="sender-info">
+                                <h3 class="name fw-bold mb-1">Emily Wang</h3>
+                                <time>10:38 AM (4 hours ago)</time>
+                            </div>
+                            <p class="content py-3 pe-3 font-weight-normal">
+                                Hi Teacher, the attached file is my homework of chapter 2. And here comes a question:
+                                Why in the following code the height of the <span>div</span> is bigger than the height
+                                of the <span>img</span> ?
+                                There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> What
+                                is the gap or extra space below image?
+                            </p>
+                            <a href="#" class="zip text-decoration-none d-flex align-items-center fw-bold mb-3">
+                                <i class="material-icons me-2">attach_file</i>HW-2-David.zip
+                            </a>
+                        </div>
+                    </li>
+                    <li class="d-flex p-3">
+                        <img class="me-2"
+                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                            alt="photo">
+                        <div class="content-text">
+                            <div class="sender-info d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="name fw-bold mb-1">Andy Chen (You)</h3>
+                                    <time>13:24 AM (1 hours ago)</time>
+                                </div>
+                                <div class="icons">
+                                    <a href="#"><i class="material-icons-outlined me-4">grade</i></a>
+                                    <a href="#"><i class="material-icons">edit</i></a>
+                                </div>
+                            </div>
+                            <p class="content py-3 pe-3 font-weight-normal">
+                                Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+                                line that a, b, c and d sit on. There is space below that line for the descenders you
+                                find on letters like g, j, p and q.<br><br>You can:<br>
+                                <ul class="content-list">
+                                    <li>• adjust the <span>vertical-align</span> of the image
+                                        to position it elsewhere (e.g. the <span>middle</span> ) or</li>
+                                    <li>• change the <span>display</span> so it isn’t inline.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="editor">
+                <div class="toolbar px-4 py-3">
+                    <div class="dropdown d-flex align-items-center">
+                        <button class="btn dropdown-toggle fw-bold me-4 border-0 py-0" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Body Text
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <a href="#"><i class="material-icons me-4">format_bold</i></a>
+                        <a href="#"><i class="material-icons me-4">format_italic</i></a>
+                        <a href="#"><i class="material-icons me-4">format_list_bulleted</i></a>
+                        <a href="#"><i class="material-icons me-4">format_list_numbered</i></a>
+                        <a href="#"><i class="material-icons me-4">image</i></a>
+                        <a href="#"><i class="material-icons me-4">insert_link</i></a>
+                        <a href="#"><i class="material-icons me-4">code</i></a>
+                    </div>
+                </div>
+                <div class="editor-body px-4 py-3">
+                    <textarea class="border-0 w-100" placeholder="Reply an answer…"></textarea>
+                    <div class="btns text-end">
+                        <button class="editor-hide btn btn-outline-success fw-bold me-3">cancel</button>
+                        <button class="btn btn-success fw-bold">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer d-flex justify-content-end  align-items-center">
+        <div class="change">
+            <a href="#"><i class="left material-icons me-4">chevron_left</i></a>
+            <a href="#"><i class="right material-icons">chevron_right</i></a>
+        </div>
+        <div class="btns">
+            <button class="btn btn-outline-success fw-bold me-3">Cancel</button>
+            <button class="editor-show btn btn-success fw-bold">Reply</button>
+        </div>
+    </footer>
+</div>
